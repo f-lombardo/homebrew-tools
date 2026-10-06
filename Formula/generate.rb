@@ -5,20 +5,20 @@
 class Generate < Formula
   desc "generate is a CLI tool for quickly generating test data such as IBAN numbers, UUIDs, VAT numbers and random passwords"
   homepage "https://github.com/f-lombardo/generate"
-  version "0.0.0"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/f-lombardo/generate/releases/download/0.0.0/generate_0.0.0_darwin_amd64.tar.gz"
-      sha256 "7eaed829dc62d45587318915ee2e2651f3e894a9cb41de7d6fd58fa2ca9069c4"
+      url "https://github.com/f-lombardo/generate/releases/download/0.0.1/generate_0.0.1_darwin_amd64.tar.gz"
+      sha256 "9cbf3fc74f552c9055aaf12bc4a94ca165c155c77a857f832ac56d7c8dbae8a1"
 
       define_method(:install) do
         bin.install "generate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/f-lombardo/generate/releases/download/0.0.0/generate_0.0.0_darwin_arm64.tar.gz"
-      sha256 "bc474b6683c13dbd68f50eb1b0394e2f8150be3a4b55e2ad025bcbfea64d51fe"
+      url "https://github.com/f-lombardo/generate/releases/download/0.0.1/generate_0.0.1_darwin_arm64.tar.gz"
+      sha256 "7b5001a0239b79e5a3d3c17c49f1a573043e2ee21f8c4f72d6bce4b047d14c1d"
 
       define_method(:install) do
         bin.install "generate"
@@ -28,22 +28,22 @@ class Generate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/f-lombardo/generate/releases/download/0.0.0/generate_0.0.0_linux_amd64.tar.gz"
-      sha256 "a938ba8d3b3124cc6232e6b13b7ac467b001d9626ab5dc848a6fae74d7c274f2"
+      url "https://github.com/f-lombardo/generate/releases/download/0.0.1/generate_0.0.1_linux_amd64.tar.gz"
+      sha256 "255be14480cc125a5c9cede1673868d53bb37aad9700fabacdbab1874a77b1f4"
       define_method(:install) do
         bin.install "generate"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/f-lombardo/generate/releases/download/0.0.0/generate_0.0.0_linux_armv6.tar.gz"
-      sha256 "0fb31a8d60814d123ca55dac3c6b0394f64f170e9963600abd72595a20f608d4"
+      url "https://github.com/f-lombardo/generate/releases/download/0.0.1/generate_0.0.1_linux_armv6.tar.gz"
+      sha256 "721205799b9ea8efa7362415bf82edd6f33bef9256f8b54ef87cd734a067dccf"
       define_method(:install) do
         bin.install "generate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/f-lombardo/generate/releases/download/0.0.0/generate_0.0.0_linux_arm64.tar.gz"
-      sha256 "ed4c80c91301a4d856f12143fe873a12a799ede96df0b30fdb238e314beb51f7"
+      url "https://github.com/f-lombardo/generate/releases/download/0.0.1/generate_0.0.1_linux_arm64.tar.gz"
+      sha256 "eccd194d7b820331dc1551bf546ff0bed48643d1ad3144139fe36921f448d2a5"
       define_method(:install) do
         bin.install "generate"
       end
